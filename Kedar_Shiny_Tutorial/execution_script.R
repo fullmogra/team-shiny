@@ -1,15 +1,18 @@
 library("shiny")
 getwd()
-setwd("/Users/kedarpatil/Documents/St-4701 - Data Visualization/team-shiny/Shiny_Tutorial")
+setwd("/Users/kedarpatil/Documents/St-4701 - Data Visualization/team-shiny/Kedar_Shiny_Tutorial")
 runApp("old_faithful")
 runApp("old_faithful", display.mode="showcase")
+
+runApp("old_faithful_dynamic")
+
 
 #GO FURTHER - LESSON1
 
 system.file("examples", package="shiny")
 
-runExample("01_hello") # a histogram
-runExample("02_text") # tables and data frames
+runExample("01_hello", display.mode="showcase") # a histogram
+runExample("02_text", display.mode="showcase") # tables and data frames
 runExample("03_reactivity") # a reactive expression
 runExample("04_mpg") # global variables
 runExample("05_sliders") # slider bars
